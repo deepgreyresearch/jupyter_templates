@@ -1,0 +1,143 @@
+{% extends "page.html" %}
+{% if announcement_login %}
+  {% set announcement = announcement_login %}
+{% endif %}
+
+{% block login_widget %}
+{% endblock %}
+
+{% block main %}
+
+<style>
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: #f1f1f1;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+    }
+
+    .LoginContainer {
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    .LoginButton {
+        padding: 5px;
+        border-radius: 3px;
+        background-color: #69b9ff;
+        font-family: Nunito;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 5px;
+        padding: 12px 30px;
+        border-radius: 4px;
+        -webkit-transition: background-color 300ms ease;
+        transition: background-color 300ms ease;
+        color: #fff;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .LoginText {
+        color: white;
+        size: 16px;
+    }
+
+    .headerText {
+        font-size: 45px;
+        color: white;
+        font-family: Nunito;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .hero-heading {
+        /* margin-top: 220px; */
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 0px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        opacity: 0.6;
+        font-family: Nunito, sans-serif;
+        color: #fff;
+        font-size: 88px;
+        line-height: 100px;
+        font-weight: 200;
+        text-align: left;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    div.LoginButton:hover{
+        background-color: #a3a1a1;
+    }
+
+    a.LoginText:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .centerAssets{
+        margin-top: 16vh;
+    }
+
+</style>
+
+<video autoplay muted loop id="myVideo">
+    <source src="https://static.videezy.com/system/resources/previews/000/044/275/original/Plexus-Abstract-Background.mp4" type="video/mp4">
+</video>
+<div class="content">
+    
+    <div class="centerAssets">
+
+        <div style="display: inline-block;">
+            <img src="https://uploads-ssl.webflow.com/600d93d0a2ae0d5db4babe95/600df5c518b45677b0d9cb1c_Logo_light.png" loading="lazy" width="280px" alt="" style="margin-bottom: -150px;">
+        </div>
+        <div style="display: inline-block;">
+            <h1 data-ix="fade-in-bottom-page-loads" class="hero-heading">Deep<br>Grey<br>Research</h1>
+        </div>
+        <h1 class="headerText">Welcome to the DGR developer environment</h1>    
+        <div class="LoginContainer">
+            <a class="LoginText" href='/hub/oauth_login?next='>
+                <div class="LoginButton">
+                    Sign in [INTERNAL USE ONLY]
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
