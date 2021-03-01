@@ -37,7 +37,7 @@
         padding: 5px;
         border-radius: 3px;
         background-color: #69b9ff;
-        font-family: Nunito;
+        font-family: Nunito, Sans-Serif;
         display: inline-block;
         margin-right: 10px;
         margin-left: 5px;
@@ -62,41 +62,11 @@
 
     .headerText {
         font-size: 45px;
+        font-weight: 100;
         color: white;
-        font-family: Nunito;
+        font-family: Nunito, Sans-Serif;
         margin-bottom: 20px;
         margin-top: 0;
-    }
-
-    .hero-heading {
-        /* margin-top: 220px; */
-        position: relative;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        padding-left: 0px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        opacity: 0.6;
-        font-family: Nunito, sans-serif;
-        color: #fff;
-        font-size: 88px;
-        line-height: 100px;
-        font-weight: 200;
-        text-align: left;
-        letter-spacing: 4px;
-        text-transform: uppercase;
     }
 
     div.LoginButton:hover{
@@ -111,21 +81,19 @@
     .centerAssets{
         margin-top: 16vh;
     }
-
 </style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <video autoplay muted loop id="myVideo">
     <source src="https://static.videezy.com/system/resources/previews/000/044/275/original/Plexus-Abstract-Background.mp4" type="video/mp4">
 </video>
+
 <div class="content">
     
     <div class="centerAssets">
-
         <div style="display: inline-block;">
-            <img src="https://uploads-ssl.webflow.com/600d93d0a2ae0d5db4babe95/600df5c518b45677b0d9cb1c_Logo_light.png" loading="lazy" width="280px" alt="" style="margin-bottom: -150px;">
-        </div>
-        <div style="display: inline-block;">
-            <h1 data-ix="fade-in-bottom-page-loads" class="hero-heading">Deep<br>Grey<br>Research</h1>
+            <img src="https://uploads-ssl.webflow.com/600c6f417dcc51f1dc2ccc4f/603c357d16b10dae9661739a_DGR_Logo_Full.png" loading="lazy" width="75%" alt="">
         </div>
         <h1 class="headerText">Welcome to the DGR developer environment</h1>    
         <div class="LoginContainer">
@@ -137,7 +105,5 @@
         </div>
     </div>
 </div>
-
-
 
 {% endblock %}
